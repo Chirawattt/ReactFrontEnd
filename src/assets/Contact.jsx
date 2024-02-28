@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types'; // manage or control parameter
 
 export default function Contact(props) {
     return (
@@ -9,7 +9,7 @@ export default function Contact(props) {
     );
 }
 
-Contact.PropTypes = {
-    email: PropTypes.string.isRequired,
-    phone: PropTypes.string.isRequired
+Contact.propTypes = {
+    email: propTypes.string.isRequired,
+    phone: propTypes.string.isRequired
 };

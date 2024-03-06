@@ -5,9 +5,9 @@ import ProductCategoryRow from './ProductCategoryRow';
 
 export default function ProductTable({ products, filterText, instockOnly }) {
     const rows = [];
-    let lastCategory = null;
+    let lastCategory = null; // to keep track of the last category
 
-    products.forEach((product) => {
+    products.forEach((product) => { 
         if (product.name.toLowerCase().indexOf(filterText.toLowerCase()) === -1) {
             return;
         } // if the product name does not contain the filter text, skip it

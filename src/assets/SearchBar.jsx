@@ -12,7 +12,7 @@ export default function SearchBar({
                 type="text"
                 placeholder="Search..."
                 value={filterText}
-                onChange={(e) => onFilterTextChange(e.target.value)} />
+                onChange={(e) => onFilterTextChange(e.target.value)} /> // e is object of event and target is the element that triggered the event
             <label>
                 <input
                     type="checkbox"
